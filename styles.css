@@ -1,0 +1,72 @@
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+}
+
+body {
+  margin: auto 0;
+  background: #121725;
+  font-size: 16px;
+  height: 100vh;
+  background-image: url("./assets/mobile/image-host.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto 100%;
+  background-position: top;
+  background-blend-mode: multiply;
+}
+
+.container {
+  margin: auto 0;
+}
+.container .logo-container {
+  margin: 62px auto 0px auto;
+  display: flex;
+  justify-content: center;
+}
+.container .content {
+  margin: 57px 24px auto 24px;
+}
+.container .content h1 {
+  font-family: "Chivo", sans-serif;
+  font-style: normal;
+  font-weight: lighter;
+  font-size: 26px;
+  line-height: 38px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.container .content h1:nth-child(1) {
+  color: #54E6AF;
+}
+.container .content h1:nth-child(2) {
+  color: #FFFFFF;
+}
+.container .content p {
+  margin-top: 16px 24px 0 24px;
+  font-family: "Chivo", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 25px;
+  text-align: center;
+  color: #C2CBE5;
+}
+.container .content .providers-container {
+  margin: 24px 24px 0px 24px;
+  display: flex;
+  justify-content: space-between;
+}
+.container .content .providers-container img {
+  width: 68px;
+  height: 20px;
+}
+.container .content .inputs-group {
+  margin: 48px 24px 0px 24px;
+}
+
+/*# sourceMappingURL=styles.css.map */
