@@ -2,9 +2,13 @@
   box-sizing: border-box;
 }
 
-h1 {
+h1, p {
   margin-block-start: 0px;
   margin-block-end: 0px;
+}
+
+input:-internal-autofill-selected {
+  background-color: transparent !important;
 }
 
 body {
@@ -17,6 +21,14 @@ body {
   background-size: auto 100%;
   background-position: top;
   background-blend-mode: multiply;
+}
+
+.hidden {
+  display: none;
+}
+
+.show {
+  display: block;
 }
 
 .container {
@@ -40,10 +52,10 @@ body {
   text-transform: uppercase;
 }
 .container .content h1:nth-child(1) {
-  color: #54E6AF;
+  color: #54e6af;
 }
 .container .content h1:nth-child(2) {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .container .content p {
   margin-top: 16px 24px 0 24px;
@@ -53,7 +65,7 @@ body {
   font-size: 15px;
   line-height: 25px;
   text-align: center;
-  color: #C2CBE5;
+  color: #c2cbe5;
 }
 .container .content .providers-container {
   margin-top: 24px;
@@ -67,8 +79,16 @@ body {
 .container .content .inputs-group {
   margin: 48px 24px 0px 24px;
 }
+.container .content .inputs-group .email-error p {
+  color: #fb3e3e;
+  font-family: "Chivo";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+}
 .container .content .inputs-group .email-container {
-  background-color: #5A668A;
+  background-color: #5a668a;
   border-radius: 28px;
   height: 45px;
   width: 100%;
@@ -79,7 +99,7 @@ body {
   border: 0px;
   background: transparent;
   width: 250px;
-  color: #FFFFFF;
+  color: #ffffff;
   font-family: "Chivo";
   font-style: normal;
   font-weight: normal;
@@ -90,14 +110,17 @@ body {
   opacity: 1;
 }
 .container .content .inputs-group .email-container input::placeholder {
-  color: #FFFFFF;
+  color: #ffffff;
+}
+.container .content .inputs-group .email-container input:focus {
+  outline: none;
 }
 .container .content .inputs-group button {
   height: 46px;
   border-radius: 28px;
   border: 1px transparent;
   width: 100%;
-  background-color: #54E6AF;
+  background-color: #54e6af;
   font-family: "Chivo";
   font-style: normal;
   font-weight: bold;
@@ -105,6 +128,10 @@ body {
   line-height: 28px;
   color: #121725;
   margin-top: 16px;
+  cursor: pointer;
+}
+.container .content .inputs-group button:hover {
+  background-color: #b3ffe2;
 }
 
 /*# sourceMappingURL=styles.css.map */

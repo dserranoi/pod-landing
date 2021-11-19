@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Chivo:wght@300;400;700;900&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="./styles.css" />
+    <script src="./app.js"></script>
     <title>Pod request access landing page</title>
 </head>
 
@@ -32,9 +33,10 @@
             </div>
             <div class="inputs-group">
                 <div class="email-container">
-                    <input type="email" name="useremail" placeholder="Email addres">
+                    <input type="email" id="userEmail" placeholder="Email addres">
                 </div>
-                <button type="button">Request Access</button>
+                <div class="email-error hidden"><p>Oops! Please check your email</p></div>
+                <button type="button" id='requestAccess'>Request Access</button>
             </div>
         </section>
 
