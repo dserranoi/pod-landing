@@ -5,9 +5,9 @@
 *.sketch
 *.fig
 
-*.scss
-styles.css.map
-package.json
+# *.scss
+# styles.css.map
+# package.json
 package-lock.json
 node_modules
 # Avoid accidental XD upload if you convert the design file
