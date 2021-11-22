@@ -4,6 +4,7 @@ $secondary-color: #2c344b;
 $secondary-ligth-color: #5a668a;
 $gray-color: #c2cbe5;
 $white-color: #ffffff;
+
 * {
   box-sizing: border-box;
 }
@@ -30,6 +31,16 @@ body {
   background-blend-mode: multiply;
 }
 
+
+@media(min-width:768px){
+  body{
+    background-image: url("./assets/tablet/image-host.jpg") ;
+    background-position-x: right;
+    background-size: auto 767px;
+    background-blend-mode: screen;
+  }
+}
+
 .hidden{
     display: none;
 }
@@ -46,6 +57,7 @@ body {
     display: flex;
     justify-content: center;
   }
+ 
   .content {
     margin: 57px 24px auto 24px;
     h1 {
@@ -81,6 +93,9 @@ body {
         width: 68px;
         height: 20px;
       }
+    }
+    .tablet{
+      display: none;
     }
     .inputs-group {
       margin: 48px 24px 0px 24px;
@@ -139,6 +154,70 @@ body {
       }
       button:hover {
         background-color: #b3ffe2;
+      }
+    }
+  }
+  @media(min-width:768px){
+    .logo-container{
+      margin: 50px auto 0px 39px;
+      display: block;
+      justify-content: unset;
+    }
+    .content{
+      background-color: $base-color;
+      margin-top:152px ;
+      width: 635px;
+      height: 510px;
+      // display: flex;
+      // flex-direction: column;
+      // justify-content: flex-start;
+
+      h1{
+        font-size: 48px;
+        line-height: 56px;
+        text-align: left;
+      }
+      p{
+        text-align: left;
+        font-size: 18px;
+        line-height: 28px;
+        color: #C2CBE5;
+        width: 445px;
+        margin-top: 31px;
+      }
+      .tablet{
+        display: flex;
+      }
+      .inputs-group{
+        margin: 40px 0px 0px 0px;
+        width: 427px;
+        
+        .email-container{
+          display: flex;
+          align-items: center;
+          
+          height: 56px;
+          input{
+            flex-grow: 1;
+          }
+          button{
+            width: 162px;
+            margin: 0px 5px 0px 0px;
+            flex-grow: 0;
+          }
+        }
+        
+      }
+      .providers-container{
+        width: 536px;
+        margin-top: 64px;
+        img,svg {
+          width: 120px;
+          height: 30px;
+        }
+      }
+      .mobile{
+        display: none;
       }
     }
   }
