@@ -41,6 +41,21 @@ body {
   }
 }
 
+@media only screen and (min-width:992px){
+  body{
+    // width: 1440px;
+    background-image: url("./assets/desktop/image-host.jpg") ;
+    background-position-x: right;
+    background-position-y: 100px;
+    background-size: 700px 640px;
+    background-blend-mode: screen;
+  }
+}
+
+@media only screen and (min-width:1200px){
+  
+}
+
 .hidden{
     display: none;
 }
@@ -220,5 +235,9 @@ body {
         display: none;
       }
     }
+  }
+
+  @media only screen and (min-width:992px){
+
   }
 }
